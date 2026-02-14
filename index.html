@@ -53,21 +53,31 @@
       padding: 0 18px;
     }
 
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom: 18px;
+    }
+    .avatar{
+      width:72px;
+      height:72px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: var(--pill);
+      object-fit: cover;
+      flex: 0 0 auto;
+    }
     h1{
-      font-size: 42px;
+      font-size: 38px;
       line-height:1.1;
       margin:0;
       letter-spacing: -0.02em;
     }
     .headline{
-      margin: 10px 0 0 0;
+      margin: 6px 0 0 0;
       color: var(--muted);
       font-size: 15.5px;
-    }
-    .intro{
-      margin: 12px 0 0 0;
-      color: var(--muted);
-      font-size: 16px;
     }
 
     .grid{
@@ -131,14 +141,6 @@
     .linkbtn span{color: var(--muted)}
     .small{font-size: 13px}
 
-    code{
-      padding: 2px 6px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: var(--pill);
-      font-size: 0.95em;
-    }
-
     footer{
       margin-top: 18px;
       color: var(--muted);
@@ -170,9 +172,12 @@
 <body>
   <main class="wrap">
     <header>
-      <h1>Priyanka Dudani</h1>
-      <p class="headline">Hands-on engineering leader • GenAI &amp; distributed systems • Hyderabad, India &amp; Seattle, US</p>
-      <p class="intro">Hey, I’m Priyanka — building things, and I love collaborating with like-minded people.</p>
+      <!-- Replace src with your photo URL or a local file like "avatar.jpg" in the repo -->
+      <img class="avatar" src="YOUR_PHOTO_URL_HERE" alt="Photo of Priyanka Dudani" />
+      <div>
+        <h1>Priyanka Dudani</h1>
+        <p class="headline">Hands-on engineering leader • GenAI & distributed systems • Hyderabad, India &amp; Seattle, US</p>
+      </div>
     </header>
 
     <section class="grid">
@@ -212,21 +217,21 @@
       <section class="card">
         <h2>Recent project</h2>
         <p>
-          <a href="https://swaadloh.lovable.app/" target="_blank" rel="noopener">Swaadloh</a>
-          <span class="muted"> — a mini e-commerce MVP from a fun Sunday build.</span>
+          <a href="https://swaadloh.lovable.app/" target="_blank" rel="noopener">Sunday project: Swaadloh</a>
+          <span class="muted"> — a small build from a Sunday sprint.</span>
         </p>
         <p class="muted small">
-          Quick experiment in shipping a lightweight storefront experience end-to-end.
+          Tip: add a 1–2 sentence description here (what it does + your role) for better SEO.
         </p>
       </section>
 
       <section class="card">
-        <h2>Search</h2>
+        <h2>Find me on Google</h2>
         <p class="muted">
           This page is designed to be indexed quickly and link back to my GitHub profile.
         </p>
         <p class="muted small">
-          Try: <code>site:priyankadudani.github.io</code> and later <code>site:github.com/priyankadudani</code>.
+          After publishing, search: <code>site:priyankadudani.github.io</code> and later <code>site:github.com/priyankadudani</code>.
         </p>
       </section>
     </section>
